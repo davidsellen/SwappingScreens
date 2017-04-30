@@ -34,6 +34,11 @@ class PlaySongVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true) { 
+            self.songTitleLbl.text = ""
+        }
+    }
     /*
     // MARK: - Navigation
 

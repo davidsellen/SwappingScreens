@@ -151,11 +151,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAB-wb-OAe">
+                                <rect key="frame" x="137.5" y="141" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="b4D-yP-zJu"/>
+                                    <constraint firstAttribute="width" constant="100" id="efx-en-GMV"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="9ao-z4-B3Z" eventType="touchUpInside" id="hy5-ac-Nia"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uHu-Fq-3dc" firstAttribute="centerX" secondItem="Eia-SR-ZHM" secondAttribute="centerX" id="Eal-PG-KgE"/>
                             <constraint firstItem="uHu-Fq-3dc" firstAttribute="top" secondItem="nxS-Ja-dob" secondAttribute="bottom" constant="52" id="FOZ-mz-Jnm"/>
+                            <constraint firstItem="fAB-wb-OAe" firstAttribute="top" secondItem="uHu-Fq-3dc" secondAttribute="bottom" constant="48" id="nip-MS-5xe"/>
+                            <constraint firstItem="fAB-wb-OAe" firstAttribute="centerX" secondItem="Eia-SR-ZHM" secondAttribute="centerX" id="xjt-qS-8c0"/>
                         </constraints>
                     </view>
                     <connections>
